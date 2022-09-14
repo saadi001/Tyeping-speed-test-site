@@ -17,7 +17,7 @@ body {
 }
 
 #question {
-  min-height: 100px;
+  height: 100px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -64,8 +64,8 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
-  left: 10%;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -127,6 +127,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 30px 0;
+  
 }
 button {
   padding: 10px 20px;
