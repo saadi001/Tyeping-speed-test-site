@@ -144,6 +144,7 @@ button {
 }
 
 #histories {
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

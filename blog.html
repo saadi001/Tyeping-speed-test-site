@@ -46,8 +46,12 @@
                          </thead>
                          <tbody>
                               <tr>
-                                   <td> Variables declared outside of any function become global variables. Global variables can be accessed and modified from any function.</td>
-                                   <td>Variables declared inside any function with var keyword are called local variables. Local variables cannot be accessed or modified outside the function declaration.</td>
+                                   <td> Variables declared outside of any function become global variables. </td>
+                                   <td>Variables declared inside any function with var keyword are called local variables.</td>
+                              </tr>
+                              <tr>
+                                   <td>Global variables can be accessed and modified from any function.</td>
+                                   <td> Local variables cannot be accessed or modified outside the function declaration.</td>
                               </tr>
                          </tbody>
                        </table>
@@ -55,10 +59,40 @@
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="p-3 border bg-success">Custom column padding</div>
+              <div class="p-3 border bg-success">
+                    <div class="text-center"><h3>How event loop works in javascript</h3></div>
+                    <div>Node.js is a single-threaded event-driven platform that is capable of running non-blocking, asynchronously programming. These functionalities of Node.js make it memory efficient. The event loop allows Node.js to perform non-blocking I/O operations despite the fact that JavaScript is single-threaded. It is done by assigning operations to the operating system whenever and wherever possible.
+
+                         Most operating systems are multi-threaded and hence can handle multiple operations executing in the background. When one of these operations is completed, the kernel tells Node.js and the respective callback assigned to that operation is added to the event queue which will eventually be executed. This will be explained further in detail later in this topic.
+                         <div class="fw-bold">Features of Event Loop:</div>
+                         <ol class="list-group list-group-numbered">
+                              <li class="list-group-item bg-info">Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.</li>
+                              <li class="list-group-item bg-danger">The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.</li>
+                              <li class="list-group-item bg-secondary">The event loop allows us to use callbacks and promises.</li>
+                              <li class="list-group-item bg-warning">The event loop executes the tasks starting from the oldest first.</li>
+                            </ol>
+
+                         </div>
+              </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="p-3 border bg-warning">Custom column padding</div>
+              <div class="p-3 border bg-warning">
+                    <div><h3>How many ways to get <span class="fw-bold">undefined</span></h3></div>
+                    <div>
+                         <ol class="list-group">
+                              
+                            
+                              <li class="list-group-item list-group-item-primary">A declared variable without assigning any value to it.</li>
+                              <li class="list-group-item list-group-item-secondary">Implicit returns of functions due to missing return statements.</li>
+                              <li class="list-group-item list-group-item-success">return statements that do not explicitly return anything.</li>
+                              <li class="list-group-item list-group-item-danger">Lookups of non-existent properties in an object.</li>
+                              <li class="list-group-item list-group-item-warning">Function parameters that have not passed.</li>
+                              <li class="list-group-item list-group-item-info">Anything that has been set to the value of undefined.</li>
+                              <li class="list-group-item list-group-item-light">Any expression in the form of void(expression)</li>
+                              <li class="list-group-item list-group-item-dark">The value of the global variable undefined</li>
+                            </ol>
+                    </div>
+              </div>
             </div>
           </div>
         </div>
